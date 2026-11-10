@@ -1,10 +1,10 @@
 package Cuentas;
 import Clientes.*;
 
-public class CuentaBancaria {
+public abstract class CuentaBancaria {
     Integer numero_cuenta;
     Float saldo;
-    String titular;
+    Cliente titular;
 
     public CuentaBancaria(Integer numero_cuenta, Float saldo, Cliente titular)
     {

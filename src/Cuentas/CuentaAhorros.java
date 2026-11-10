@@ -1,12 +1,13 @@
 package Cuentas;
+import Clientes.Cliente;
 
 public class CuentaAhorros extends CuentaBancaria {
     Integer numero_cuenta;
     Float saldo;
-    String titular;
-    float tasa_interes = 0.05f;
+    Cliente titular;
+    final float TASA_INTERES = 0.05f;
 
-    public CuentaAhorros(Integer numero_cuenta, Float saldo, String titular)
+    public CuentaAhorros(Integer numero_cuenta, Float saldo, Cliente titular)
     {
         super(numero_cuenta, saldo, titular);
     }

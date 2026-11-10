@@ -17,4 +17,9 @@ public class Banco {
         Cliente c = new Cliente(nombre, this.id, documento);
         lista_clientes.add(c);
     }
+
+    public void crear_cuenta()
+    {
+
+    }
 }
