@@ -4,17 +4,46 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Cliente {
-    String nombre;
-    Integer id;
-    Integer documento;
-    ArrayList<CuentaBancaria> cuentas = new ArrayList<>();
+    private String nombre;
+    private Integer id;
+    private Integer documento;
+    private ArrayList<CuentaBancaria> cuentas = new ArrayList<>();
 
     public Cliente(String nombre, Integer id, int documento)
     {
         this.nombre = nombre;
         this.id = id;
         this.documento = documento;
+    }
 
+    public String getNombre()
+    {
+        return nombre;
+    }
+
+    public void setNombre(String nombre)
+    {
+        this.nombre = nombre;
+    }
+
+    public Integer getId()
+    {
+        return id;
+    }
+
+    public void setId(int id)
+    {
+        this.id = id;
+    }
+
+    public Integer getDocumento()
+    {
+        return this.documento;
+    }
+
+    public void set_documento(int documento)
+    {
+        this.documento = documento;
     }
 
     public boolean buscar_Cuenta(CuentaBancaria cuenta)
