@@ -37,7 +37,7 @@ public class Banco {
         Cliente clienteEncontrado = null;
 
         for (Cliente c : lista_clientes) {
-            if (c.getDocumento().equals(docBuscar)) { // Asumiendo que tienes un método getDocumento() en Cliente
+            if (c.getDocumento().equals(docBuscar)) {
                 clienteEncontrado = c;
                 break;
             }
